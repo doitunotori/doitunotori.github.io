@@ -158,9 +158,9 @@ function newColour() {   /*■2013年版追加*/
     <a href="https://mastoshare.net/post.php?text=%e3%83%89%e3%82%a4%e3%83%84%e3%81%ae%e3%83%88%e3%83%aa%f0%96%a5%bd" onclick="window.open(this.href, '', 'width=500,height=400'); return false;"><img src="https://mastoshare.net/img/toot.svg" width="75" height="20"></a>
     <a href="https://twitter.com/doitunotori?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @doitunotori</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5e8D-LhiYt0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe style="width:100%;" src="https://www.youtube.com/embed/5e8D-LhiYt0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PrwRBlIzqUI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe  style="width:100%;" src="https://www.youtube.com/embed/PrwRBlIzqUI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
      <br>
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
@@ -174,15 +174,19 @@ function newColour() {   /*■2013年版追加*/
            $(function() {
     setTimeout(function(){
       $('#c1').css({opacity: '1'});
+      setTimeout(function(){$('#c1').remove()}, 3000);
       }, 3000);
     setTimeout(function(){
       $('#c2').css({opacity: '1'});
+      setTimeout(function(){$('#c2').remove()}, 3000);
     }, 4000);
     setTimeout(function(){
       $('#c3').css({opacity: '1'});
+      setTimeout(function(){$('#c3').remove()}, 3000);
     }, 5000);
     setTimeout(function(){
       $('#c4').css({opacity: '1'});
+      setTimeout(function(){$('#c4').remove()}, 3000);
     }, 6000);
     });
            </script>
