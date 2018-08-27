@@ -19,11 +19,9 @@
     <!--★コピーここから　位置はbodyの中です-->
 <script type="text/javascript"><!--
 (function (){  //即時関数で囲んでグローバル変数を消すため、この行はこのままで
-
 //in addition to "random" can be set to any valid colour eg "#f0f" or "red"
 var colour="random";//★左記の"random"の項目に色名を記述すると記述した１色になる。このままでは虹色
 var sparkles=50;    //★原本50。キラキラ星の数
-
 //指定ここまで-----------------★内容物が無くてもHTML5動作可能へ　 2016/04/23-----------
 /****************************
 *  Tinkerbell Magic Sparkle *
@@ -143,6 +141,20 @@ function newColour() {   /*■2013年版追加*/
     </div>
     <div class="container" style="z-index:200;">
     <h1 style="color:red;">ドイツのトリです</h1>
+     <div id="comments" style="position: absolute; width:100%; height: 100%; text-align:center; top: 100px; color: red;">
+        <div id="c1" style="position: absolute; bottom: 120px; font-size:243%; text-align:center; width:100%; font-weight: 900; opacity:0.0"  >
+            リ　ス　ポ　ー　ン　地　点
+        </div>
+        <div id="c2" style="position: absolute; bottom: 220px; font-size:250%; text-align:center; width:100%; font-weight: 900; opacity:0.0"  >
+           旧　　　約　　　聖　　　書
+        </div>
+        <div id="c3" style="position: absolute; bottom: 320px; font-size:255%; text-align:center; width:100%; font-weight: 900; opacity:0.0"  >
+           墾　田　永　年　私　財　法
+        </div>
+        <div id="c4" style="position: absolute; bottom:420px; font-size:255%; text-align:center; width:100%; font-weight: 900; opacity:0.0"  >
+           ５　分　で　わ　か　る　ド　イ　ツ　の　ト　リ
+        </div>
+      </div>
     <a href="https://mastoshare.net/post.php?text=%e3%83%89%e3%82%a4%e3%83%84%e3%81%ae%e3%83%88%e3%83%aa%f0%96%a5%bd" onclick="window.open(this.href, '', 'width=500,height=400'); return false;"><img src="https://mastoshare.net/img/toot.svg" width="75" height="20"></a>
     <a href="https://twitter.com/doitunotori?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @doitunotori</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <br>
@@ -152,11 +164,28 @@ function newColour() {   /*■2013年版追加*/
      <br>
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-    
-    
-    <div style="bgcolor:red;">
-    <small">Copyright (c) Vtubird Project. All Rights Reserved.</small>
+
+
+    <div style="bgcolor:#FF0000;">
+    <small>Copyright (c) Vtubird Project. All Rights Reserved.</small>
            </div>
-  
+
+           <script>
+           $(function() {
+    setTimeout(function(){
+      $('#c1').css({opacity: '1'});
+      }, 3000);
+    setTimeout(function(){
+      $('#c2').css({opacity: '1'});
+    }, 4000);
+    setTimeout(function(){
+      $('#c3').css({opacity: '1'});
+    }, 5000);
+    setTimeout(function(){
+      $('#c4').css({opacity: '1'});
+    }, 6000);
+    });
+           </script>
+
       </body>
 </html>
